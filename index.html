@@ -17,8 +17,8 @@
     <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
     <!-- REVOLUTION NAVIGATION STYLES -->
 
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link rel="icon" href="images/fav.png" type="image/x-icon">
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +42,9 @@
                 <div class="auto-container">
                     <div class="main-box clearfix">
                         <div class="pull-left logo-box">
-                            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                            <div class="logo"><a href="index.html">
+                                    <h3 class="logo-text">Bharat Trilogy Summit</h3>
+                                </a></div>
                         </div>
 
                         <!--Nav Outer-->
@@ -68,12 +70,15 @@
 
                         <!-- Outer btn -->
                         <div class="outer-btn">
-                            <a href="contact.html" class="theme-btn btn-style-four">Buy Tickets <span
-                                    class="flaticon-arrow"></span></a>
+                            <a href="#" class="theme-btn btn-style-four" data-toggle="modal"
+                                data-target="#exampleModal">Register Now<span class="flaticon-arrow"></span></a>
                         </div>
+
                     </div>
                 </div>
             </div>
+
+
             <!--End Header Upper-->
 
             <!-- Mobile Menu  -->
@@ -90,7 +95,49 @@
             </div><!-- End Mobile Menu -->
         </header>
         <!--End Main Header -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Connect Now</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input type="name" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Contact Number</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                            </div>
 
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                            <div class="outer-btn">
+                                <a href="#" type="submit button" class="theme-btn btn-style-four" data-toggle="modal"
+                                    data-target="#exampleModal">Submit<span class="flaticon-arrow"></span></a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!--Main Slider-->
         <section class="main-slider style-two">
             <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
@@ -104,12 +151,29 @@
                             data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                             data-param8="" data-param9="" data-rotate="0" data-saveperformance="off"
                             data-slotamount="default" data-thumb="images/main-slider/2.jpg">
+                            <!-- <video width="640" height="360" controls class="rev-slidebg">
+                                <source src="images/gallery/indorient.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video> -->
+                            <div class="video-banner-wrapper position-relative" style="height: 100%;">
+                                <video autoplay="" muted="" loop="" playsinline=""
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                                    <source src="images/gallery/indorient.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
 
-                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
+                                <!-- Optional overlay -->
+                                <div class="video-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                                 z-index: 1;">
+                                </div>
+
+
+                            </div>
+                            <!-- <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                                 data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                                src="images/main-slider/5.png">
+                                src="images/main-slider/5.png"> -->
 
-                            <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
+                            <!-- <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
                                 data-type="text" data-height="none" data-whitespace="nowrap" data-width="none"
@@ -161,7 +225,7 @@
                                 data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                                 <div class="info-box"><span class="icon fa fa-map-marker"></span> Mumbai, Maharashtra
                                 </div>
-                            </div>
+                            </div> -->
                         </li>
 
                         <!-- Slide 1 -->
@@ -172,12 +236,25 @@
                             data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                             data-param8="" data-param9="" data-rotate="0" data-saveperformance="off"
                             data-slotamount="default" data-thumb="images/main-slider/2.jpg">
+                            <div class="video-banner-wrapper position-relative" style="height: 100%;">
+                                <video autoplay="" muted="" loop="" playsinline=""
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                                    <source src="images/gallery/indorient.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
 
-                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
+                                <!-- Optional overlay -->
+                                <div class="video-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                                 z-index: 1;">
+                                </div>
+
+
+                            </div>
+                            <!-- <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                                 data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                                src="images/main-slider/5.png">
+                                src="images/main-slider/5.png"> -->
 
-                            <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
+                            <!-- <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
                                 data-type="text" data-height="none" data-whitespace="nowrap" data-width="none"
@@ -228,7 +305,7 @@
                                 data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                                 <div class="info-box"><span class="icon fa fa-map-marker"></span> Mumbai, Maharashtra
                                 </div>
-                            </div>
+                            </div> -->
 
                         </li>
                     </ul>
@@ -282,7 +359,7 @@
                 </div>
 
                 <div class="video-box">
-                    <figure class="image wow fadeIn"><img src="images/resource/video-image.jpg" alt=""></figure>
+                    <figure class="image wow fadeIn"><img src="images/resource/video-image.png" alt=""></figure>
                 </div>
             </div>
         </section>
@@ -390,7 +467,8 @@
                             India's Atma Nirbhar Bharat vision.</p>
                     </div>
                 </div>
-                <div class="btn-box text-center"><a href="#watch" class="theme-btn btn-style-one">For Detailed Agenda –
+                <div class="btn-box text-center"><a href="javascript:void(0);" class="theme-btn btn-style-one"
+                        data-toggle="modal" data-target="#exampleModal">For Detailed Agenda –
                         Please Register <span class="flaticon-arrow"></span></a></div>
             </div>
         </section>
@@ -937,67 +1015,176 @@
             </div>
         </section>
         <!--End Speakers Section -->
-        <!-- News Section -->
-        <section class="news-section">
+        <!-- Shedule Section -->
+        <section class="shedule-section style-four" style="background-image: url(images/background/16.jpg);">
+            <div class="parallax-scene parallax-scene-2 anim-icons">
+                <span data-depth="0.40" class="parallax-layer icon icon-circle-5"></span>
+                <span data-depth="0.70" class="parallax-layer icon icon-circle-5"></span>
+            </div>
+
             <div class="auto-container">
-                <div class="sec-title">
-                    <span class="title">Recent News</span>
-                    <h2>Event News</h2>
+                <div class="sec-title light text-center">
+                    <span class="title">About Conference</span>
+                    <h2>Event Flow</h2>
                 </div>
 
-                <div class="row">
-                    <!-- News Block -->
-                    <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/news-1.jpg" alt=""></figure>
-                            </div>
-                            <div class="lower-content">
-                                <div class="date">19 <span>Mar</span></div>
-                                <h4><a href="blog-detail.html">Innovation Summit 2025</a></h4>
-                                <div class="post-info">by <a href="#">Samanta Doe</a></div>
-                                <div class="text-box">
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur do adipisicing sed do
-                                        eiusmtempor incididunt</div>
-                                    <div class="link-box"><a href="blog-detail.html">Read More</a></div>
+                <div class="shedule-tabs tabs-box">
+                    <!-- <div class="btns-box">
+                        <ul class="tab-buttons clearfix">
+                            <li class="tab-btn active-btn" data-tab="#tab-1">First Day <span>Nov 20, 2025</span></li>
+                            <li class="tab-btn" data-tab="#tab-2">Second Day <span>Nov 20, 2025</span></li>
+                            <li class="tab-btn" data-tab="#tab-3">Third Day <span>Nov 20, 2025</span></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="tabs-content">
+
+                        <!--Tab-->
+                        <div class="tab active-tab" id="tab-1">
+                            <!-- Shedule Block -->
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Guest Arrival & Registration </a></h4>
+
+                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Opening Remarks</a></h4>
 
-                    <!-- News Block -->
-                    <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/news-2.jpg" alt=""></figure>
-                            </div>
-                            <div class="lower-content">
-                                <div class="date">20 <span>Mar</span></div>
-                                <h4><a href="blog-detail.html">Innovation Summit 2025</a></h4>
-                                <div class="post-info">by <a href="#">Samanta Doe</a></div>
-                                <div class="text-box">
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur do adipisicing sed do
-                                        eiusmtempor incididunt</div>
-                                    <div class="link-box"><a href="blog-detail.html">Read More</a></div>
+                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Welcome Address</a></h4>
 
-                    <!-- News Block -->
-                    <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/news-3.jpg" alt=""></figure>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="lower-content">
-                                <div class="date">25 <span>Mar</span></div>
-                                <h4><a href="blog-detail.html">Innovation Summit 2025</a></h4>
-                                <div class="post-info">by <a href="#">Samanta Doe</a></div>
-                                <div class="text-box">
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur do adipisicing sed do
-                                        eiusmtempor incididunt</div>
-                                    <div class="link-box"><a href="blog-detail.html">Read More</a></div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Keynote Address</a></h4>
+                                        <p>“Dharma-Guided Prosperity: Leveraging Ancient Indian Wisdom for Viksit Bharat
+                                            2047 and Sustainable SME Growth”</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Felicitation of Guests of Honour </a></h4>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">SME Pitch Session 1 </a></h4>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <h2 class="break mb-5 mt-5">—-----------Networking Break : Meet. Connect.
+                                Explore—-----------</h2>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Leadership Lens & Transformative Stories by
+                                                Sutadhar</a></h4>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">SME Pitch Session 2 </a></h4>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Fireside Chat</a></h4>
+                                        <p>“Decolonizing Capital: The Investor’s Role in Viksit Bharat 2027”
+                                            In Conversation with K. Sudershan
+                                        </p>
+                                        <strong>Panelists:</strong>
+                                        <ul>
+                                            <li>Srinivasan, Chairperson – eMudhra</li>
+                                            <li>Gop Kumar, MD – Axis Mutual Fund</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Special Address </a></h4>
+                                        <p>“Pivots of Revival: Stories That Inspire</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">The Unveiling: Launch of Our Latest Research Paper
+                                            </a></h4>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="shedule-block">
+                                <div class="inner-box clearfix">
+                                    <div class="content-box">
+                                        <div class="date"><span class="icon far fa-clock"></span>2:30 PM onwards
+                                        </div>
+                                        <h4><a href="shedule.html">Vote of Thanks</a></h4>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1005,7 +1192,7 @@
                 </div>
             </div>
         </section>
-        <!-- News Section -->
+        <!--End Shedule Section -->
         <!-- Speakers Section Four -->
         <section class="speakers-section-four" style="background-image: url(images/background/13.jpg);">
             <div class="parallax-scene parallax-scene-2 anim-icons">
@@ -1070,8 +1257,9 @@
                                             Ltd. and Chatha Financial Services Pvt Ltd., reflecting his broader
                                             commitment to entrepreneurship and financial stewardship.</p>
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1110,8 +1298,9 @@
                                             in India. Under his leadership, Grand Continent continues to expand with
                                             purpose, offering high-value stays and building investor confidence. </p>
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1168,8 +1357,9 @@
                                             business evolution, positioning Canarys as one of India’s most respected
                                             transformation firms.</p>
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1208,8 +1398,9 @@
                                             solution provider—setting new benchmarks in quality, resilience, and
                                             customer trust.</p>
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1268,8 +1459,9 @@
                                         </p>
 
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1308,8 +1500,9 @@
                                             consistently delivers quality within tight timelines and thrives on complex
                                             civil challenges.</p>
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1367,8 +1560,9 @@
                                         <p>His vision and hands-on approach have shaped Rapid Care into a pioneering
                                             enterprise—one that blends global standards with personalized service.</p>
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1407,8 +1601,9 @@
                                             elevate India’s mould-making capabilities—positioning Om Galaxy as a trusted
                                             name in infrastructure and industrial supply chains.</p>
                                     </div>
-                                    <div class="btn-box"><a href="mailto:someone@example.com"
-                                            class="theme-btn btn-style-one">To connect with the Founder Click here
+                                    <div class="btn-box"><a href="javascript:void(0):" class="theme-btn btn-style-one"
+                                            data-toggle="modal" data-target="#exampleModal">To connect with the Founder
+                                            Click here
                                             <span class="flaticon-arrow"></span></a></div>
                                 </div>
                             </div>
@@ -1653,55 +1848,14 @@
                 </div>
 
                 <div class="video-box hidden-box">
-                    <figure class="image wow fadeIn"><img src="images/resource/video-image.jpg" alt=""></figure>
+                    <figure class="image wow fadeIn"><img src="images/resource/video-image.png" alt=""></figure>
                 </div>
             </div>
         </section>
         <!--End About Summit Two -->
         <!-- Fun Fact Section -->
-        <section class="fun-fact-section" style="background-image: url(images/background/2.jpg);">
-            <div class="auto-container">
-                <div class="fact-counter">
-                    <div class="row clearfix">
-
-                        <!--Column-->
-                        <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                            <div class="count-box">
-                                <span class="icon flaticon-layers-1"></span>
-                                <span class="count-text" data-speed="3000" data-stop="1230">0</span>
-                                <h4 class="counter-title">Participants</h4>
-                            </div>
-                        </div>
-
-                        <!--Column-->
-                        <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                            <div class="count-box">
-                                <span class="icon flaticon-group-profile-users"></span>
-                                <span class="count-text" data-speed="3000" data-stop="20">0</span>
-                                <h4 class="counter-title">Speakers</h4>
-                            </div>
-                        </div>
-
-                        <!--Column-->
-                        <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
-                            <div class="count-box">
-                                <span class="icon flaticon-cup-of-drink"></span>
-                                <span class="count-text" data-speed="3000" data-stop="15">0</span>
-                                <h4 class="counter-title">Cup of Coffe</h4>
-                            </div>
-                        </div>
-
-                        <!--Column-->
-                        <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
-                            <div class="count-box">
-                                <span class="icon flaticon-medal"></span>
-                                <span class="count-text" data-speed="3000" data-stop="140">0</span>
-                                <h4 class="counter-title">Awards Win</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="fun-fact-section" style="background-image: url(images/background/2.jpg);height: 400px;">
+            
         </section>
         <!--End Fun Fact Section -->
         <!-- Gallery Section -->
@@ -1828,7 +1982,11 @@
             <div class="auto-container">
                 <!-- Footer Content -->
                 <div class="footer-content">
-                    <div class="footer-logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+                    <div class="footer-logo">
+                        <div class="logo"><a href="index.html">
+                                <h3 class="logo-text">Bharat Trilogy Summit</h3>
+                            </a></div>
+                    </div>
                     <div class="social-links">
 
                         <h3 class="mt-5">Event imagined by Etherwire</h3>

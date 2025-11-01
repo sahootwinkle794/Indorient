@@ -239,7 +239,12 @@ img{
 ====================================================================
 
  ***/
-
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full-screen height */
+  overflow: hidden;
+}
 /*Btn Style One*/
 
 .btn-style-one{
@@ -831,7 +836,13 @@ img{
 	-o-transition:all 300ms ease;
 	transition:all 300ms ease;
 }
-
+.logo{
+	padding: 24px 0px;
+	color: rgb(5, 172, 223) !important;
+}
+.footer-logo .logo{
+	padding-bottom: 0px;
+}
 .main-header .header-upper .logo-box .logo img{
 	display:inline-block;
 	max-width:100%;
