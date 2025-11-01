@@ -3303,10 +3303,12 @@ a.ui-button:active, .ui-button:active,
 	display: flex;
 	justify-content: center;
 }
-
+.together{
+	color: rgb(222, 222, 19);
+}
 .speaker-block .social-links ul{
 	position: relative;
-	padding: 30px 20px;
+	padding: 16px 5px;
 	text-align: center;
 	background-color: rgba(241,75,89,.80);
 }
@@ -3353,13 +3355,15 @@ a.ui-button:active, .ui-button:active,
 .speaker-block .caption-box .name{
 	position: relative;
 	display: block;
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 1em;
 	color: #ffffff;
 	font-weight: 400;
 	margin-bottom: 10px;
 }
-
+.hidden-box{
+	visibility: hidden !important;
+}
 .speaker-block .caption-box .name a{
 	color: #ffffff;
 	display: inline-block;
@@ -7432,18 +7436,27 @@ a.ui-button:active, .ui-button:active,
 
 .main-footer .footer-content{
 	position: relative;
-	padding: 100px 0 100px;
+	padding: 30px;
 	text-align: center;
 }
-
+.far{
+	color: violet;
+	font-weight: 800;
+}
+.comp-p{
+	width: 68%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
 .main-footer .footer-logo{
 	position: relative;
-	margin-bottom: 65px;
+	margin-bottom: 10px;
 }
 
 .main-footer .social-links{
 	position: relative;
-	margin-bottom: 75px;
+	margin-bottom: 10px;
 }
 
 .main-footer .social-links .text-box{
@@ -7457,7 +7470,8 @@ a.ui-button:active, .ui-button:active,
 	line-height: 1em;
 	color: #ffffff;
 	font-weight: 400;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px !important;
 }
 
 .main-footer .social-links .text{
